@@ -2,20 +2,20 @@
 import './App.css';
 import React, { useState } from 'react';
 import GenerateBox from './components/GenerateBox'
-import DisplayBox from './components/DisplayBox'
+// import DisplayBox from './components/DisplayBox'
 
 function App() {
-  const [currentColor, setCurrentColor] = useState([]);
+  /* const [currentColor, setCurrentColor] = useState([]);
 
   const addedBox = ( newColor ) => {
     setCurrentColor([ ...currentColor, newColor]);
-  }
+  } */
 
   return (
-    <div className="App body">
+    <div className="App container">
       <div>
-        <GenerateBox onNewBox={ addedBox } />
-        <DisplayBox box={ currentColor } />
+        <GenerateBox />
+        {/* <DisplayBox box={ currentColor } /> */}
       </div>
     </div>
   );
